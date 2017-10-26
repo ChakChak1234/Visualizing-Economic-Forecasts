@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0022)http://127.0.0.1:7976/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<SCRIPT type="application/shiny-singletons"></SCRIPT>
+   
+<SCRIPT type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.0.3];selectize[0.11.2];htmlwidgets[0.8];proj4js[2.3.15];highcharts[5.0.6];fontawesome[4.5.0];htmlwdgtgrid[1];highchart-binding[0.5.0];bootstrap[3.3.7]</SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/json2-min.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/jquery.min.js"></SCRIPT>
+ <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/shiny.css" 
+rel="stylesheet"> 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/shiny.min.js"></SCRIPT>
+ <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/selectize.bootstrap3.css" 
+rel="stylesheet"> <!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]--> 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/selectize.min.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/htmlwidgets.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/proj4.js"></SCRIPT>
+ <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/motion.css" 
+rel="stylesheet"> 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/highstock.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/highcharts-3d.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/highcharts-more.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/annotations.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/broken-axis.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/data.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/drilldown.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/exporting.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/funnel.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/heatmap.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/map.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/no-data-to-display.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/offline-exporting.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/solid-gauge.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/treemap.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/annotations(1).js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/draggable-legend.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/draggable-points.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/export-csv.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/grouped-categories.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/motion.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/pattern-fill-v2.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/tooltip-delay.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/reset.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/symbols-extra.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/text-symbols.js"></SCRIPT>
+ <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/font-awesome.min.css" 
+rel="stylesheet"> <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/htmlwdgtgrid.css" 
+rel="stylesheet"> 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/highchart.js"></SCRIPT>
+ 
+<META name="viewport" content="width=device-width, initial-scale=1"> <LINK href="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/bootstrap.min.css" 
+rel="stylesheet"> 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/bootstrap.min.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/html5shiv.min.js"></SCRIPT>
+ 
+<SCRIPT src="R%20Shiny%20Platform%20Structure_06_13_2017_340%20PM_files/respond.min.js"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18666"></HEAD> 
+<BODY>
+<DIV class="container-fluid">
+<H1>Economic Forecasts in several countries</H1>
+<DIV class="row">
+<DIV class="col-sm-1.5 panel">
+<DIV class="form-group shiny-input-container" style="width: 100%;"><LABEL class="control-label" 
+for="Country">Country</LABEL>           
+<DIV><SELECT id="Country"><OPTION value="Mauritius" 
+  selected="">Mauritius</OPTION> <OPTION value="Uganda">Uganda</OPTION> <OPTION 
+  value="Mexico">Mexico</OPTION> <OPTION value="Bolivia">Bolivia</OPTION></SELECT> 
+            
+<SCRIPT type="application/json" data-nonempty="" data-for="Country">{}</SCRIPT>
+           </DIV></DIV>
+<DIV class="form-group shiny-input-container" style="width: 100%;"><LABEL class="control-label" 
+for="Variable">Variable</LABEL>           
+<DIV><SELECT id="Variable"><OPTION value="Income" selected="">Income</OPTION> 
+  <OPTION value="Electricity Consumption">Electricity 
+Consumption</OPTION></SELECT>             
+<SCRIPT type="application/json" data-nonempty="" data-for="Variable">{}</SCRIPT>
+           </DIV></DIV>
+<DIV class="form-group shiny-input-container" style="width: 100%;"><LABEL class="control-label" 
+for="theme">Theme</LABEL>           
+<DIV><SELECT id="theme"><OPTION value="FALSE" selected="">FALSE</OPTION> 
+  <OPTION value="fivethirtyeight">fivethirtyeight</OPTION> <OPTION value="economist">economist</OPTION> 
+  <OPTION value="darkunica">darkunica</OPTION> <OPTION 
+  value="gridlight">gridlight</OPTION> <OPTION 
+  value="sandsignika">sandsignika</OPTION> <OPTION value="null">null</OPTION> 
+  <OPTION value="handdrwran">handdrwran</OPTION> <OPTION 
+  value="chalk">chalk</OPTION></SELECT>             
+<SCRIPT type="application/json" data-nonempty="" data-for="theme">{}</SCRIPT>
+           </DIV></DIV></DIV>
+<DIV class="col-sm-11">        Main Plot         
+<DIV class="highchart html-widget html-widget-output" id="hcontainer" style="width: 100%; height: 500px;"></DIV>
+<DIV class="row">
+<DIV class="col-sm-3">            Base Scenario             
+<DIV class="highchart html-widget html-widget-output" id="hcontainer" style="width: 100%; height: 500px;"></DIV></DIV>
+<DIV class="col-sm-3">            Pro-Poor             
+<DIV class="highchart html-widget html-widget-output" id="hcontainer" style="width: 100%; height: 500px;"></DIV></DIV>
+<DIV class="col-sm-3">            Pro-Poor &amp; Middle Class             
+<DIV class="highchart html-widget html-widget-output" id="hcontainer" style="width: 100%; height: 500px;"></DIV></DIV></DIV></DIV></DIV></DIV></BODY></HTML>

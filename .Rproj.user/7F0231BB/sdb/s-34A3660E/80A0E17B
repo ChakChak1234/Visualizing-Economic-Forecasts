@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(ggplot2)\nlibrary(dplyr)\n\nbcl <- read.csv(\"bcl-data.csv\", stringsAsFactors = FALSE)\n\n\n\nui <- fluidPage(\n  titlePanel(\"Economic Forecasts\"),\n  sidebarLayout(\n    sidebarPanel(\n      radioButtons(\"typeInput\", \"Product type\",\n                   choices = c(\"BEER\", \"REFRESHMENT\", \"SPIRITS\", \"WINE\"),\n                   selected = \"WINE\"),\n      uiOutput(\"countryOutput\")\n    ),\n    mainPanel(\n      plotOutput(\"coolplot\"),\n      br(), br(),\n      tableOutput(\"results\")\n    )\n  )\n)\n\nserver <- function(input, output, session) {\n  output$countryOutput <- renderUI({\n    selectInput(\"countryInput\", \"Country\",\n                sort(unique(bcl$Country)),\n                selected = \"CANADA\")\n  })  \n  \n  filtered <- reactive({\n    if (is.null(input$countryInput)) {\n      return(NULL)\n    }    \n    \n    bcl %>%\n      filter(Type == input$typeInput,\n             Country == input$countryInput\n      )\n  })\n  \n  output$coolplot <- renderPlot({\n    if (is.null(filtered())) {\n      return()\n    }\n    ggplot(filtered(), aes(x = Price, y = Alcohol_Content, group = Type, colour = Type)) +\n      geom_line()\n  })\n  \n  output$results <- renderTable({\n    filtered()\n  })\n}\n\nshinyApp(ui = ui, server = server)",
+    "created" : 1497458004831.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3973483771",
+    "id" : "80A0E17B",
+    "lastKnownWriteTime" : 1498747720,
+    "last_content_update" : 1498747720934,
+    "path" : "C:/Users/dpad.intern3/Desktop/Projects/microsimulation/Microsimulation_Mauritius/bleh.R",
+    "project_path" : "bleh.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
