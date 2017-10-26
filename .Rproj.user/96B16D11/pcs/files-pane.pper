@@ -2,6 +2,10 @@
     "path" : "C:/Users/chakw/OneDrive/Documents/Github/microsimulation/Microsimulation_Mauritius",
     "sortOrder" : [
         {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
             "ascending" : true,
             "columnIndex" : 2
         }
